@@ -14,7 +14,6 @@
         *{
             margin: 0;
             padding: 0;
-            overflow: auto;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }   
 
@@ -78,9 +77,9 @@
         #imgcapa{
             display: block;
             position: relative;
-            background-image: url("imgpadrão.png");
+            background-image: url(imgpadrão.png);
             background-repeat: no-repeat;
-            background-size: 200%;
+            background-size: 110%;
             height: 230px;
             background-position: center;
             width: 100%;
@@ -115,6 +114,7 @@
             top: -100px;
             margin: 0 auto;
             padding: 80px 70px;
+            max-width: 940px;
         }
 
         #iLogo{
@@ -168,6 +168,13 @@
             font-weight: bold;
             margin: 5px 0;
         }
+        #feedposts h3{
+            color: #333333;
+            font-size: 120%;
+            text-align: left;
+            font-weight: bold;
+            margin: 25px auto 0px auto;
+        }
         #feedposts p{
             color: #333333;
             font-weight: normal;
@@ -179,7 +186,7 @@
             display: block;
             position: relative;
             margin: 20px auto;
-            width:70%;
+            width:700px;
         }
         .buttCallPost{
             background-color: #0071e3;
@@ -202,7 +209,7 @@
             background-color: #e4e4e4;
             width: 80px;
             border-radius: 5px;
-            display: block;
+            display: none;
             right: 0;
             position: absolute;
             margin: 15px 0;
@@ -214,13 +221,48 @@
         }
         #feedposts{
             position: relative;
-            margin:  20px 0;
+            margin:  40px 0;
             
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         }
+        #listJobsInfo{
+            font-size: 110%;
+            padding: 5px 45px;
+        }
+        #listJobsInfo li{
+            font-size: 110%;
+            padding: 8px 0px;
+        }
+        #contraOb{
+            font-weight: bolder !important;
+        }
+        footer{
+            background-color: #333333;
+            color: white;
+            padding: 40px 0;
+            margin: 0;
+            text-align: center;
+        }
+        footer h2{
+            font-weight: normal;
+            font-size: 120%;
+        }
     </style>
     <script>
-
+        function searchItem() {
+    let input = document.getElementById('inSearch').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('searchFunct');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.color="#ddd";
+        }
+        else {
+            x[i].style.backgrondColor="red";                 
+        }
+    }
+}
     </script>
 </head>
 <body>
@@ -231,7 +273,7 @@
                 <div id="iLogo">Assistência Técnica</div>
 
                 <form id="pesquisaTwoItem" action="/action_page.php">
-                    <input type="text" placeholder="Pesquisar..." name="search">
+                    <input id="inSearch" type="text" placeholder="Pesquisar..." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
                 
@@ -253,25 +295,42 @@
         </article>
 
         
-        <article id="feedposts">
-            <h1>Celulares</h1> <button id="datePost">10/07/2022</button>
-            <p>Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência. Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência. Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência.</p>
-            <img class="img" src="imgpadrão.png" alt="">
-            <button class="buttCallPost">Fazer Orçameto Agora</button>
+        <article class="searchFunct" id="feedposts">
+            <h1>Assistência Técnica Celulares</h1> <button id="datePost">10/07/2022</button>
+
+            <p>Temos assistência técnica especializada em placa, resolvemos qualquer tipo de erro desde aparelhos molhados ou expostos à humidade até problemas crônicos de placa!
+                Trabalhamos com peças originais e mão de obra especializada!
+                <br> Seu celular quebrou? Entre agora mesmo em contato e faça um orçamento gratuito!</p>
+
+            <img class="img" src="imagem Celulares.png" alt="">
+            <button class="buttCallPost">Entrar em Contato</button>
         </article>
 
-        <article id="feedposts">
-            <h1>Computadores</h1> <button id="datePost">10/07/2022</button>
-            <p>Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência. Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência. Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência.</p>
-            <img class="img" src="imgpadrão.png" alt="">
-            <button class="buttCallPost">Fazer Orçameto Agora</button>
-        </article>
-
-        <article id="feedposts"> <button id="datePost">10/07/2022</button>
-            <h1>Notebooks</h1>
-            <p>Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência. Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência. Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade e transparência.</p>
-            <img class="img" src="imgpadrão.png" alt="">
-            <button class="buttCallPost">Fazer Orçameto Agora</button>
+        <article class="searchFunct" id="feedposts">
+            <h1>Assistência Técnica Informática</h1> <button id="datePost">10/07/2022</button>
+            
+            <h3>Alguns dos serviços prestados:</h3>
+            
+            <ul  class="searchFunct" id="listJobsInfo">
+                <li>Recuperação de dados</li>
+                <li>Configurações de Dispositivos Wireless</li>
+                <li>Configurações de telefones VOIP</li>
+                <li>Troca de telas de notebook</li>
+                <li>Troca de teclados de notebook</li>
+                <li>Conserto de computadores e notebooks que não ligam</li>
+                <li>Upgrade de equipamentos</li>
+                <li>Atualizações de sistema operacional</li>
+                <li>Remoções de vírus</li>
+                <li>Configurações de melhora de desempenho</li>
+                <li>Diagnostico de problemas de Hardware</li>
+                <li>Backups de informações</li>
+                <li>Configurações para acesso externo em servidores</li>
+                <li>Configurações para acesso externo em DVRS e câmeras de </li>segurança
+                <li>Conserto de estruturas cabeamento de rede</li>    
+            </ul>
+            <p id="contraOb">#Caso a solução que procura não esteja listada entre em contato!</p>
+            <img class="img" src="imagem informatica.png" alt="">
+            <button class="buttCallPost">Entrar em Contato</button>
         </article>
         <!--
         <article id="linksbarr">
@@ -291,10 +350,8 @@
         </article>
     -->
     </section>
-    <!--
     <footer>
         <h2>Telebrasil Celulares & Informática</h2>
     </footer>
-    -->
 </body>
 </html>
