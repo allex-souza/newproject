@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,9 +11,26 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <header>
+    <header> 
         
         <div id="logo">
+            <div id="caixaCabecalho">
+                <div id="iLogo">Assistência Técnica</div>
+
+                <form id="pesquisaTwoItem" action="/action_page.php">
+                    <input id="inSearch" type="text" placeholder="Pesquisar..." >
+                    <button onclick="tapInProduction()"  type="button"><i class="fa fa-search"></i></button>
+                </form>
+
+                <div id="acertoBut">
+                    <button onclick="tapInProduction()"   id="iContact">Fazer Orçamento Agora</button>
+                </div>
+            
+            </div>
+        </div>
+
+        <!-- Ocupação position relative do menu fixo! -->
+        <div id="logoContra">
             <div id="caixaCabecalho">
                 <div id="iLogo">Assistência Técnica</div>
 
@@ -23,18 +41,19 @@
                 
                 
                 <div id="acertoBut">
-                    <button id="iContact">Entrar em Contato</button>
+                    <button id="iContact">Fazer Orçamento Agora</button>
                 </div>
             
             </div>
         </div>
+
         <div id="imgcapa"></div>
     </header>
 
     <section>
         <article id="postcabecalho">
             <h1>Assistência técnica - Celulares e Informática</h1>
-            <h3>Estamos no mercado há mais de 16 anos, sempre trabalhando com qualidade
+            <h3>Estamos no mercado há mais de 15 anos, sempre trabalhando com qualidade
                 e transparência.</h3>
                 <button id="goiania-go">Goiânia-GO</button>
         </article>
@@ -48,11 +67,12 @@
                 <br> Seu celular quebrou? Entre agora mesmo em contato e faça um orçamento gratuito!</p>
 
             <img class="img" src="imagem Celulares.png" alt="">
-            <button class="buttCallPost">Entrar em Contato</button>
+            <button id="tapButonsArticle" onclick="tapInProduction()" class="buttCallPost">Fazer Orçamento Agora</button>
         </article>
 
         <article class="searchFunct" id="feedposts">
-            <h1>Assistência Técnica Informática</h1> <button id="datePost">10/07/2022</button>
+            <h1>Assistência Técnica Informática</h1>
+            <button id="datePost">10/07/2022</button>
             
             <h3>Alguns dos serviços prestados:</h3>
             
@@ -75,15 +95,22 @@
             </ul>
             <p id="contraOb">#Caso a solução que procura não esteja listada entre em contato!</p>
             <img class="img" src="imagem informatica.png" alt="">
-            <button class="buttCallPost">Entrar em Contato</button>
+            <button id="tapButonsArticle" onclick="tapInProduction()" class="buttCallPost">Fazer Orçamento Agora</button>
         </article>
-        <!--
+        <article  class="searchFunct" id="feedposts">
+            <h1>Localização e Rota</h1>
+
+            <iframe  class="img iframeMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.2229357847136!2d-49.270575785181066!3d-16.715724650741173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef0df506b7d95%3A0xa3ad85a545f4a406!2sTelebrasil%20Celulares%20e%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1657682645037!5m2!1spt-BR!2sbr0" width="100%" height="450" allowfullscreen="" style="border: none ;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 style="text-align:center;">Rua T-64, nº 1004 - Sala 08 - St. Bueno, Goiânia - GO, 74230-110</h3>
+            <button id="tapButonsArticle" onclick="tapInProduction()" class="buttCallPost">Ver Rota até a Loja</button>
+        </article>
+        
         <article id="linksbarr">
             <img class="img" src="logo.png" alt="" id="logo">
             <h2>Telebrasil Celulares & Informática</h2>
             <div>
                 <div id="iconesRedes">
-                    instagram
+                    Instagram
                 </div>
                 <div id="iconesRedes">
                     facebook
@@ -93,7 +120,7 @@
                 </div>
             </div>
         </article>
-    -->
+
     </section>
     <footer>
         <h2>Telebrasil Celulares & Informática</h2>
