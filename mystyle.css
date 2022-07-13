@@ -14,6 +14,8 @@
             position: relative;
             display: block;
             width: 100%;
+            margin: 0 auto;
+            background-color: red;
         }
         /*Cabecalho + logo + pesquisa + Botão*/
         #caixaCabecalho{
@@ -25,6 +27,7 @@
          margin: 0 auto;
          display: flex;
          justify-content: space-between;
+         max-width:calc(940px + 140px);
         }
         #logoOneItem{
             height: 50px;
@@ -43,7 +46,7 @@
             margin: 9px auto;
             box-shadow: 0px 0px 0px .5px rgba(0, 0, 0, 0.2);
         }
-        button[type=submit] {
+        button[type=button] {
             background-color: #0071e3;
             height: 30px;
             border: 3px solid #0071e3;
@@ -55,14 +58,30 @@
         }
         button:hover{
             cursor: pointer;
-            background-color: #1877B7;
+            background-color: #156296;
         }
         #logo{
+            position: fixed;
+            display: block;
+            background-color: white;
+            flex: 1 1 auto;
+            margin: 0 auto;
+            padding:16px 0;
+            z-index: 2;
+            width: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+            
+        }
+        #logoContra{
             position: relative;
             display: block;
             background-color: white;
-            padding:16px 0;
             flex: 1 1 auto;
+            margin: 0 auto;
+            padding:16px 0;
+            z-index: 0;
+            width: 100%;
+            
         }
         
         #imgcapa{
@@ -94,8 +113,9 @@
         }
         #iContact:hover{
             cursor: pointer;
-            background-color: #1877B7;
+            background-color: #156296;
         }
+        
 
         section{
             background-color: white;
@@ -106,7 +126,12 @@
             margin: 0 auto;
             padding: 80px 70px;
             max-width: 940px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
         }
+        /*
+        
+        
+        */
 
         #iLogo{
             z-index: -10;
@@ -150,6 +175,10 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             text-align: center;
+        }
+        
+        #goiania-go:hover{
+            cursor:default;
         }
 
         #feedposts h1{
@@ -243,4 +272,9 @@
             position: relative;
             top: 50%;
             transform: translate(0,-100%);
+        }
+
+        .iframeMap{
+            border: none ;
+            box-shadow: 0px 0px 0px .5px rgba(0, 0, 0, 0.4);
         }
