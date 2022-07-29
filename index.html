@@ -4,128 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telebrasil</title>
+    <link rel="shortcut icon" href="./fav-icon.png" type="image/x-icon">
+    <title>Free Install</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="myjs.js"></script>
     <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
-    <header> 
-        
-        <div id="logo">
-            <div id="caixaCabecalho">
-                <div class="correcaoQuebra" id="iLogo">Assistência Técnica</div>
+    <header id="headerCabecalho">
+        <div id="cxCabecalho">
+            <div class="flexIcons" id="cxLogo">
+                <img src="logo-free-install.png" alt="LogoFreeInstall">
+            </div>
 
-                <form  class="correcaoQuebra" id="pesquisaTwoItem" action="/action_page.php">
+            <form class="flexIcons"   class="correcaoQuebra" id="pesquisaTwoItem" action="/action_page.php">
 
-                    <input id="inSearch" type="text" placeholder="Pesquisar..." >
+                <input class="correcaoIcon"  id="inSearch" type="text" placeholder="Pesquisar..." >
 
-                    <button onclick="tapInProduction()"  type="button"><i class="fa fa-search"></i></button>
-                    
-                </form>
-
-                <div  class="correcaoQuebra" id="acertoBut">
-                    <button onclick="tapInProduction()"   id="iContact">Fazer Orçamento Agora</button>
-                </div>
-            
+                <button class="correcaoIcon" onclick="tapInProduction()"  type="button"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="flexIcons" id="button">
+                <button id="buttCall" type="text">Add favoritos</button>
             </div>
         </div>
-
-        <!-- Ocupação position relative do menu fixo! -->
-        <div id="logoContra">
-            <div id="caixaCabecalho">
-                <div id="iLogo">Assistência Técnica</div>
-
-                <form id="pesquisaTwoItem" action="/action_page.php">
-                    <input id="inSearch" type="text" placeholder="Pesquisar..." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-                
-                
-                <div id="acertoBut">
-                    <button id="iContact">Fazer Orçamento Agora</button>
-                </div>
-            
-            </div>
-        </div>
-
-        <div id="imgcapa"></div>
     </header>
+    <main>
+        <header id="cabecalhoMain">
+            <h1 id="headerCabecalhoH1">Uma grande seleção de softwares para Windows, gratuitos e sem vírus.</h1>
+        </header>
+        <section id="cxsection">
 
-    <section>
-        <article id="postcabecalho">
-            <h1>Assistência técnica - Celulares e Informática</h1>
-            <h3>Estamos no mercado há mais de 15 anos, sempre trabalhando com qualidade
-                e transparência.</h3>
-                <button id="goiania-go">Goiânia-GO</button>
-        </article>
+            <div id="cxProgs">
 
-        
-        <article class="searchFunct" id="feedposts">
-            <h1>Assistência Técnica Celulares</h1> <button id="datePost">10/07/2022</button>
-
-            <p>Temos assistência técnica especializada em placa, resolvemos qualquer tipo de erro desde aparelhos molhados ou expostos à humidade até problemas crônicos de placa!
-                Trabalhamos com peças originais e mão de obra especializada!
-                <br> Seu celular quebrou? Entre agora mesmo em contato e faça um orçamento gratuito!</p>
-
-            <img class="img" src="imagem Celulares.png" alt="">
-            <button id="tapButonsArticle" onclick="tapInProduction()" class="buttCallPost">Fazer Orçamento Agora</button>
-        </article>
-
-        <article class="searchFunct" id="feedposts">
-            <h1>Assistência Técnica Informática</h1>
-            <button id="datePost">10/07/2022</button>
-            
-            <h3>Alguns dos serviços prestados:</h3>
-            
-            <ul  class="searchFunct" id="listJobsInfo">
-                <li>Recuperação de dados</li>
-                <li>Configurações de Dispositivos Wireless</li>
-                <li>Configurações de telefones VOIP</li>
-                <li>Troca de telas de notebook</li>
-                <li>Troca de teclados de notebook</li>
-                <li>Conserto de computadores e notebooks que não ligam</li>
-                <li>Upgrade de equipamentos</li>
-                <li>Atualizações de sistema operacional</li>
-                <li>Remoções de vírus</li>
-                <li>Configurações de melhora de desempenho</li>
-                <li>Diagnostico de problemas de Hardware</li>
-                <li>Backups de informações</li>
-                <li>Configurações para acesso externo em servidores</li>
-                <li>Configurações para acesso externo em DVRS e câmeras de </li>segurança
-                <li>Conserto de estruturas cabeamento de rede</li>    
-            </ul>
-            <p id="contraOb">#Caso a solução que procura não esteja listada entre em contato!</p>
-            <img class="img" src="imagem informatica.png" alt="">
-            <button id="tapButonsArticle" onclick="tapInProduction()" class="buttCallPost">Fazer Orçamento Agora</button>
-        </article>
-        <article  class="searchFunct" id="feedposts">
-            <h1>Localização e Rota</h1>
-
-            <iframe  class="img iframeMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.2229357847136!2d-49.270575785181066!3d-16.715724650741173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef0df506b7d95%3A0xa3ad85a545f4a406!2sTelebrasil%20Celulares%20e%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1657682645037!5m2!1spt-BR!2sbr0" width="100%" height="450" allowfullscreen="" style="border: none ;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h3 style="text-align:center;">Rua T-64, nº 1004 - Sala 08 - St. Bueno, Goiânia - GO, 74230-110</h3>
-            <button id="tapButonsArticle" onclick="tapInProduction()" class="buttCallPost">Ver Rota até a Loja</button>
-        </article>
-        
-        <article id="linksbarr">
-            <img class="img" src="logo.png" alt="" id="logo">
-            <h2>Telebrasil Celulares & Informática</h2>
-            <div>
-                <div id="iconesRedes">
-                    Instagram
-                </div>
-                <div id="iconesRedes">
-                    facebook
-                </div>
-                <div id="iconesRedes">
-                    Twitter
-                </div>
             </div>
-        </article>
-
-    </section>
+        </section>
+    </main>
     <footer>
-        <h2>Telebrasil Celulares & Informática</h2>
     </footer>
 </body>
 </html>
