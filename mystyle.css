@@ -1,199 +1,180 @@
-@charset "UTF8";
-
-@font-face {
-    font-family: productsans;
-    src: url("./Product\ Sans\ Bold.ttf");
-}
+@charset "utf8";
 *{
     margin: 0;
     padding: 0;
-    font-family:productsans;
+    font-family: sans-serif;
 }
-body{
-    background-color: #ddd;
-}
-#headerCabecalho{
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 1180px;
+    z-index: 2;
+    top: 0;
     background-color: white;
-}
-#cxCabecalho{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 80%;
-    margin: 0 auto;
-}
-#headerCabecalho::after{
-    content: '';
-    background-image: url('background-cabecalho.png');
-    width: 100%;
-    height: 200px;
-    background-size: 101%;
-    background-position: center;
-    position: absolute;
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.flexIcons{
-    flex: 1 1 100px;
-    position: relative;
-    background-color: white;
-}
-#cxLogo{
-    position: relative;
-    display: block;
-    background-color: transparent;
-    
-}
-#cxLogo img{
-    max-width: 50%;
-    padding: 15px 0;
-}
-input[type=text] {
-    border: 2px solid #0071e3;
-    height: 30px;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    padding: 0 15px;
-    top: 50%;
-    transform: translate(0,-50%);
-    border-radius: 8px;
-    box-shadow: 0px 0px 0px .5px rgba(0, 0, 0, 0.2);
-}
-button[type=button] {
-    background-color: #0071e3;
-    height: 30px;
-    border: 3px solid #0071e3;
-    border-radius: 8px;
-    width: 100%;
-    padding: 0;
-    max-width: 30px;
-    color: white;
-    box-shadow: 0px 0px 0px .5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    display: block;
-    top: 50%;
-    transform: translate(0,-50%);
-    position: relative;
-    margin-left: 5px;
-}
-button:hover{
-    cursor: pointer;
-    background-color: #156296;
-}
-#pesquisaTwoItem{
-    display: flex;
-}
-
-#buttCall{
-    background-color: #0071e3;
-    height: 30px;
-    padding: 0 50px;
-    border-radius: 8px;
-    border: none;
-    font-family: productsans;
-    font-size: 12pt;
-    font-weight: bolder;
-    text-shadow: 0px 0px 2px #333333;
-    color: white;
-    position: relative;
-    top: 50%;
-    left: 100%;
-    transform: translate(-100%,-50%);
-    box-shadow: 0px 0px 0px 0.5px rgb(0 0 0 / 20%);
-}
-.correcaoQuebra{
-    position: relative;
-    display: flex;
-}
-.correcaoIcon{
-    position: relative;
-    flex: 1 1 auto;
-}
-
-
-
-main{
-    background-color: white;
-    width: calc(80% - 18px);
-    margin: 0 auto;
-    padding: 20px;
-    top: 80px;
-    position: relative;
-    display: block;
-    border-radius: 8px;
-}
-
-#cabecalhoMain{
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-#cabecalhoMain h1{
-    margin: 40px auto 0px auto;
-    text-align: center;
-    color: #1a1a1a;
-    font-size: 23pt;
 }
 /*
-#cabecalhoMain::after{
-    content: '';
-    background-color: #acacac;
-    width: 70%;
-    height: 2px;
-    border-radius: 10px;
+#contraOcup{
     position: relative;
     display: block;
-    top: 50px;
-    margin: 0 auto;
-}*/
-#cxsection{
-    display: block;
-    position: relative;
-    margin-top: 50px;
-}
-#cxProgs{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    align-items: center;
-}
-.formatProg{
-    box-shadow: 0px 0px 30px #bebebe;
-    flex: 1 1 auto;
-    border-radius: 8px;
-    padding: 20px 15px;
-    margin: 10px;
-    width: 100px;
-    max-width: 118px;
-    text-align: center;
-}
-.formatProg h2{
-    font-weight: 500;
-    text-align: center;
-    margin: auto auto 5px auto;
-    font-size: 15px ;
-}
-.formatProg img{
-    width: 90%;
-    border-radius: 50%;
-}
-.formatProg button{
-    background-color: #0071e3;
-    box-shadow: 0px 0px 30px #d1d1d1;
-    color: white;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 5px;
-    position: relative;
-
-}
-footer{
-    background-color: #1a1a1a;
     width: 100%;
-    height: 100px;
-    margin: 100px auto 0 auto;
+
+}*/
+
+#headerXbox{
+    width: 1000px;
+    margin: 0 auto;
+    
+}
+#headerYbox{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#imgbox{
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#imgbox img{
+    position: relative;
+    display: block;
+    width:180px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+#laingNav{
+    position: relative;
+}
+
+#laingNav, #imgbox{
+    flex: 1 1 1;
+    justify-content: space-between;    
+}
+#cxnav{
+    display: flex;
+    position: relative;
+    height: 50px;
+    top: 50%;
+    transform: translate(0,-50%);
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+#laingNav img{
+    width: 40px;
+    border-radius: 5px;
+}
+
+#divIcons{
+    flex: 1 1 1 ;
+    position: relative;
+    justify-content: flex-end;
+    margin: 15px;
+    
+}
+#divIcons h3{
+    color: black;
+}
+
+#capaPinc{
+    position: relative;
+    display: block;
+    background-color:#727473;
+    color: #727473;
+    width: 100%;
+    min-width: 1180px;
+    padding: 25px 0;
+}
+#centerTitle{
+    position: relative;
+    display: block;
+    width: 300px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px;
+    border: 1px solid rebeccapurple;
+    background-color: #fff;
+    border: 2px solid rgb(90, 90, 90);
+}
+#centerTitle::after{
+    content: 'Aroldo Brandão Engenharia';
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: transparent;
+    display: block;
+    width: 95%;
+    height: 95%;
+    background-color: transparent;
+    border: 2px solid #373435;
+    top: 50%;
+    z-index: 2;
+}
+#centerTitle h2{
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+#centerTitle h3{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#centerTitle button{
+    background-color:#585a4b;
+    font-size: 1.06rem;
+    font-weight: bolder;
+    padding: 13px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 20px auto 0 auto;
+}
+main{
+    position: relative;
+    display: block;
+}
+article{
+    background-color: #ffffff;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+#aling-y-x-geral{
+    display: flex;
+}
+article h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #585a4b;
+    text-shadow: 0px 0px 4px rgb(126, 126, 126);
+    margin: 0 0 20px auto;
+}
+article img{
+    width: 35%;
+}
+article p{
+    font-size: 1.3rem;
+    color: #373435;
+    padding: 10px;
+    letter-spacing: 0.01rem;
+}
+button{
+    
+    background-color:#585a4b;
+    font-size: 1.06rem;
+    font-weight: bolder;
+    padding: 13px 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin: 30px auto 0 auto;
 }
